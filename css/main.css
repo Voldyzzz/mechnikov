@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 400 16px/21.31px "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* metrics section =======================================================*/
+
+.metrics {
+  padding: 10px 0;
+}
+
+.metrics .metrics-title {
+  font: 900 48px "Impact", sans-serif;
+}
+
+.metrics .metrics-wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.metrics .metrics-wrapper .metrics-wrapper-information {
+  margin-top: 24px;
+  max-width: 720px;
+  width: 100%;
+}
+
+.metrics
+  .metrics-wrapper
+  .metrics-wrapper-information
+  .metrics-wrapper-information-text {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.metrics .metrics-wrapper .metrics-wrapper-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  color: white;
+}
+
+.metrics .metrics-wrapper .metrics-wrapper-cards .metrics-wrapper-cards-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 196px;
+  width: calc(100% / 3 - 28px);
+  margin-bottom: 32px;
+  border-radius: 35px;
+}
+
+.metrics
+  .metrics-wrapper
+  .metrics-wrapper-cards
+  .metrics-wrapper-cards-card:nth-child(n + 4) {
+  margin-bottom: 0px;
+}
+
+.metrics
+  .metrics-wrapper
+  .metrics-wrapper-cards
+  .metrics-wrapper-cards-card:nth-child(n + 4)
+  .metrics-wrapper-cards-card-icon {
+  margin-top: 40px;
+}
+
+.metrics
+  .metrics-wrapper
+  .metrics-wrapper-cards
+  .metrics-wrapper-cards-card
+  .metrics-wrapper-cards-card-icon {
+  width: 35px;
+  height: 35px;
+  line-height: normal;
+  margin-top: 45px;
+}
+
+.metrics
+  .metrics-wrapper
+  .metrics-wrapper-cards
+  .metrics-wrapper-cards-card
+  .metrics-wrapper-cards-card-number {
+  font: 900 48px "Impact", sans-serif;
+  margin: 23px 0 12px;
+}
+
+.metrics
+  .metrics-wrapper
+  .metrics-wrapper-cards
+  .metrics-wrapper-cards-card
+  .metrics-wrapper-cards-card-text {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.star {
+  background-color: #fb7c84;
+  padding: 0 30px;
+}
+
+.bar {
+  background-color: #ffb865;
+  margin: 0 24px;
+}
+
+.shapes {
+  background-color: #d4ee47;
+  padding: 0 26px;
+}
+
+.graduate {
+  background-color: #6ed6a4;
+  padding: 0 20px;
+}
+
+.buiding {
+  background-color: #883cda;
+  margin: 0 24px;
+}
+
+.child {
+  background-color: #5ac4ff;
+}
