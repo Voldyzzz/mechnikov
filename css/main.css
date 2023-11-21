@@ -22,14 +22,14 @@ body {
   padding: 0 100px;
 }
 
+.title {
+  font: 900 48px "Impact", sans-serif;
+}
+
 /* metrics section =======================================================*/
 
 .metrics {
   padding: 10px 0;
-}
-
-.metrics .metrics-title {
-  font: 900 48px "Impact", sans-serif;
 }
 
 .metrics .metrics-wrapper {
@@ -141,4 +141,33 @@ body {
 
 .child {
   background-color: #5ac4ff;
+}
+
+/* success section =======================================================*/
+
+.success {
+  margin-top: 140px;
+}
+
+.success .success-title {
+  max-width: 542px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.success .success-text {
+  max-width: 368px;
+  width: 100%;
+}
+
+.success .success-wrapper {
+  display: grid;
+  grid: repeat();
+  margin-top: 17px;
+}
+
+.success .success-wrapper .success-wrapper-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px 32px 32px;
 }
