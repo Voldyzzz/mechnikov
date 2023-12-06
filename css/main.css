@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 264px 0 240px;
 }
 
 .title {
@@ -162,7 +162,8 @@ body {
 
 .success .success-wrapper {
   display: grid;
-  grid: repeat();
+  grid-template-columns: 336px 24px 336px 24px 336px 24px 336px;
+  grid-template-rows: 370px 24px 370px;
   margin-top: 17px;
 }
 
@@ -170,4 +171,62 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px 24px 32px 32px;
+}
+
+.success .success-wrapper .success-wrapper-card:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.success .success-wrapper .success-wrapper-card:nth-child(3) {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.success .success-wrapper .success-wrapper-card:nth-child(4) {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.success .success-wrapper .success-wrapper-card .success-wrapper-card-title {
+  font: 700 24px "Roboto", sans-serif;
+  margin-bottom: 8px;
+}
+
+.success .success-wrapper .success-wrapper-card .success-wrapper-card-text {
+  font-size: 18px;
+}
+
+.link-wrapper {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 16px 24px;
+  width: 216px;
+  border-radius: 35px;
+  border: 1px solid #883cda;
+}
+
+.success .success-wrapper .success-wrapper-card .arrow {
+  width: 14px;
+  height: 14px;
+  margin-left: 16px;
+}
+
+.success .success-wrapper .success-wrapper-card .success-wrapper-card-link {
+  width: 134px;
+  color: #883cda;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.first {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+
+.second {
+  grid-column: 7;
+  grid-row: 1/3;
 }
