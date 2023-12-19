@@ -8,7 +8,74 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section class="metrics">
+    <header
+      class="container"
+      style="
+        margin-top: 23px;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: 128px;
+      "
+    >
+      <nav class="header">
+        <div class="header-logo">
+          <div style="margin-right: 4px">
+            Приватна школа <br />
+            студента Мечникова
+          </div>
+          <img src="/images/Subtract.svg" alt="" width="36" height="36" />
+        </div>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: 14px;
+          "
+        >
+          <div style="display: flex; justify-content: end">
+            <div style="display: flex; gap: 48px">
+              <div class="">+38 (067) 539-94-17</div>
+              <div style="display: flex">
+                UA <img src="/images/arrow.svg" alt="" />
+              </div>
+              <div class="">Вхід</div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: end">
+            <div style="display: flex; gap: 10px" class="header-navigation">
+              <div class="nav-item">Про нас</div>
+              <div class="nav-item">Наши школи</div>
+              <div class="nav-item">Інші послуги</div>
+              <div class="nav-item">Блог</div>
+              <div class="nav-item">Контакти</div>
+              <div class="nav-item nav-item-active">Записатся</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="overlay"></div>
+    <div class="first-step-bg"></div>
+    <div class="">
+      <div
+        style="
+          width: 800px;
+          padding-top: 300px;
+          padding-left: 240px;
+          z-index: 100;
+          color: white;
+        "
+      >
+        <div style="display: flex">
+          <div class="">5 шкіл</div>
+          <div class="">233 039 учня</div>
+        </div>
+      </div>
+    </div>
+    <section class="metrics" style="margin-top: 503px">
       <div class="container">
         <h2 class="metrics-title">Школа в метриці</h2>
         <div class="metrics-wrapper">
@@ -98,5 +165,49 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="inner">
+          <div class="inner-information">
+            <div class="inner-information-title">EV 3 school</div>
+            <p class="inner-information-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+              saepe.
+            </p>
+            <a href="#" class="inner-information-link">
+              Політика конфіденційності</a
+            >
+          </div>
+          <div class="inner-wrapper">
+            <ul class="inner-wrapper-list">
+              <li class="inner-wrapper-list-item">
+                <a href="#" class="inner-wrapper-list-item-link">Напрями</a>
+              </li>
+            </ul>
+            <ul class="inner-wrapper-list">
+              <li class="inner-wrapper-list-item">
+                <a href="#" class="inner-wrapper-list-item-link">Як вступити</a>
+              </li>
+            </ul>
+            <ul class="inner-wrapper-list">
+              <li class="inner-wrapper-list-item">
+                <a href="#" class="inner-wrapper-list-item-link">Партнерам</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-contacts">
+            <a href="tel:+380672907909" class="inner-contacts-number"
+              >+380 (67) 290 79 09</a
+            >
+            <p class="inner-contacts-text">
+              Робочий час:<br />Пн — Пт з 8:00 до 18:00
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <a href="#" class="wrapper-study_link">Підібрати навчання</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
