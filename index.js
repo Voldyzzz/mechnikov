@@ -1,22 +1,22 @@
-const modal = document.querySelector("#modal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
+const refs = {
+  modal: document.querySelector("#modal"),
+  openModal: document.querySelector(".open-button"),
+  closeModal: document.querySelector(".close-button"),
+};
 
-openModal.addEventListener("click", () => {
-  modal.showModal();
+refs.openModal.addEventListener("click", () => {
+  refs.modal.showModal();
 });
 
-closeModal.addEventListener("click", () => {
-  modal.setAttribute("closing", "");
+refs.closeModal.addEventListener("click", () => {
+  refs.modal.setAttribute("closing", "");
 
-  modal.addEventListener(
+  refs.modal.addEventListener(
     "animationend",
     () => {
-      modal.removeAttribute("closing");
-      modal.close();
+      refs.modal.removeAttribute("closing");
+      refs.modal.close();
     },
     { once: true }
   );
-
-  alert("Form ended");
 });
