@@ -51,7 +51,9 @@
               <div class="nav-item">Інші послуги</div>
               <div class="nav-item">Блог</div>
               <div class="nav-item">Контакти</div>
-              <div class="nav-item nav-item-active">Записатся</div>
+              <div class="nav-item nav-item-active button open-button">
+                Записатся
+              </div>
             </div>
           </div>
         </div>
@@ -292,5 +294,20 @@
         </div>
       </div>
     </footer>
+    <dialog class="modal" id="modal">
+      <div style="display: flex; flex-direction: column">
+        <div class="input-container">
+          <input type="mail" required="" />
+          <label>Phone Number</label>
+        </div>
+        <div class="input-container">
+          <input type="mail" required="" />
+          <label>Email</label>
+        </div>
+        <button class="button close-button">close modal</button>
+      </div>
+    </dialog>
+    <button class="button open-button">open modal</button>
   </body>
+  <script src="/index.js"></script>
 </html>
